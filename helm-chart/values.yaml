@@ -38,8 +38,8 @@ ingress:
     kubernetes.io/ingress.class: contour
     kubernetes.io/tls-acme: "true"
   path: /
-  authorHost: github-magnolia-docker-author.experimentation.magnolia-cloud.com
-  publicHost: github-magnolia-docker-public.experimentation.magnolia-cloud.com
+  authorHost: author.berger.ph
+  publicHost: public.berger.ph
   # hosts:
   #  - host: github-magnolia-docker-author.experimentation.magnolia-cloud.com
   #    paths:
@@ -50,10 +50,10 @@ ingress:
   tls:
     - secretName: github-magnolia-docker-author-tls
       hosts:
-        - github-magnolia-docker-author.experimentation.magnolia-cloud.com
+        - author.berger.ph
     - secretName: github-magnolia-docker-public-tls
       hosts:
-        - github-magnolia-docker-public.experimentation.magnolia-cloud.com
+        - public.berger.ph
 
 resources:
   limits:
